@@ -1,0 +1,307 @@
+html{
+    box-sizing: border-box;
+
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+.gridContainer{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 90px  500px 200px 1fr 600px  160px;
+    grid-template-areas:
+    'navBarArea'
+    'photoSliderArea'
+    'textSectionArea'
+    'productsGalleryArea'
+    'puzzleContainerArea'
+    'footerArea';
+
+}
+
+/* NAVEGATION BAR STYLES */
+@font-face{
+    font-family: dinamicFont1;
+    src: url(./lato_typography/Lato-Italic.ttf);
+}
+.navegationBar{
+    display: flex;
+    flex-direction: row;
+
+    grid-area: navBarArea;
+
+    padding: 20px;
+    background-color:black;
+    color: #A09D93;
+}
+
+.navBarOptions{
+    align-self: center;
+    margin-left: 100px;
+}
+.options{
+    padding-right: 40px;
+}
+.navBarIcons{
+    align-self: center;
+    margin-left: 40px;
+}
+.icons{
+ padding-right: 40px;
+}
+.dinamicLogo{
+margin-left: 30px;
+}
+
+/* PHOTO SLIDER STYLES */
+@font-face{
+    font-family: dinamicFont2;
+    src: url(./lato_typography/Lato-Heavy.ttf);
+}
+.photoSlider{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+
+
+    grid-area: photoSliderArea;
+
+    background-image: url(./Dinamic_imgs/ian-dooley-DvIJ7h5p_J8-unsplash.jpg);
+    background-size: 100% 500px;
+    font-family: dinamicFont2;
+    padding: 50px;
+}
+
+.photoSliderText{
+    color: #FFD950;
+    font-size: 2.5em;
+    font-weight: 300;
+    padding-left: 70px;
+    margin-bottom: 0px;
+}
+.photoSliderSubText{
+    padding-left: 70px;
+    font-size: 1.5em;
+    color: #FFD950;
+    margin-bottom: 0px;
+}
+.photoSliderSubText2{
+    padding-left: 70px;
+    font-size: 1.3em;
+    color: #A09D93;
+    margin-top: 0px;
+}
+.photoSliderTextDescription{
+    padding-left: 70px;
+    font-size: 1em;
+    color: #A09D93;
+    width: 600px;
+}
+
+.textSection1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-color: white;
+    width: 100%;
+    color:#A09D93;
+
+    grid-area: textSectionArea;
+}
+.text1{
+    font-family: dinamicFont1;
+    width: 970px;
+    font-size: 1.2em;
+    text-align: justify;
+    text-justify: inter-word;
+}
+/* PRODUCTS GALLERY STYLES */
+.productsGallery{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 500px 260px 100px ;
+    grid-row-gap: 20px;
+
+    border-top: 2PX solid gray;
+    border-bottom: 2px solid grey;
+    padding: 30px;
+
+    grid-area: productsGalleryArea;
+}
+.productGrid1{
+    display: grid;
+    grid-template-columns: 800px 1fr;
+    grid-template-rows: 200px 200px;
+    column-gap: 20px;
+    row-gap: 20px;
+    padding: 40px;
+
+}
+.subProduct1{
+    grid-row: span 2;
+    background-image: url(./Dinamic_imgs/ian-dooley-FoF0w-d6Z74-unsplash.jpg);
+    background-size: 100% 100%;
+
+}
+.subProduct2{
+    background-image: url(./Dinamic_imgs/ian-dooley-7m0OJhmjqYg-unsplash.jpg);
+    background-size: 100% 100%;
+
+}
+.subProduct3{
+    background-image: url(./Dinamic_imgs/ian-dooley-rBkihK3n_YI-unsplash.jpg);
+    background-size: 100% 100%;
+}
+
+.productGrid2{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 2fr;
+    column-gap: 40px;
+
+    padding: 40px;
+
+}
+.product1{
+    background-image: url(./Dinamic_imgs/priscilla-du-preez-GNJbBgPP2VU-unsplash.jpg);
+    background-size: 100% 100%;
+
+}
+.product2{
+    background-image: url(./Dinamic_imgs/stil-TVllFyGaLEA-unsplash.jpg);
+    background-size: 100% 100%;
+
+}
+.product3{
+
+    background-image: url(./Dinamic_imgs/sun-lingyan-_H0fjILH5Vw-unsplash.jpg);
+    background-size: 100% 100%;
+
+}
+.product4{
+    background-image: url(./Dinamic_imgs/fachry-zella-devandra-bNSdIkCBJOs-unsplash.jpg);
+    background-size: 100% 100%;
+}
+
+.productFlexText{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color:#A09D93;
+    background-color: white;
+    margin-bottom: 20px;
+}
+
+/* PUZZLE CONTAINER STYLES */
+.puzzleContainer{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-row-gap: 20px;
+    grid-column-gap: 20px;
+    padding: 40px;
+    grid-area: puzzleContainerArea;
+}
+.puzzlePart1{
+    grid-column: span 2;
+    background-image: url(./Dinamic_imgs/1.png);
+    background-size: 100% 100%;
+}
+.puzzlePart2{
+    background-image: url(./Dinamic_imgs/2.png);
+    background-size: 100% 100%;
+}
+.puzzlePart3{
+    grid-row: span 2;
+    background-image: url(./Dinamic_imgs/3.png);
+    background-size: 100% 100%;
+}
+.puzzlePart4{
+
+    background-image: url(./Dinamic_imgs/4.png);
+    background-size: 100% 100%;
+}
+.puzzlePart5{
+    grid-column: span 2;
+    background-image: url(./Dinamic_imgs/5.png);
+    background-size: 100% 100%;
+}
+/* FOOTER STYLES */
+.dinamicPageFooter{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    background-color: black;
+    color: white;
+
+    grid-area: footerArea;
+}
+
+.footerItems{
+    display: flex;
+    flex-direction: row;
+
+    font-family: dinamicFont2;
+    padding-left: 80px;
+
+}
+.footItem1{
+    padding-right: 40px;
+    font-size: 1em;
+    color: #FFD950;
+}
+.footItem2{
+    width: 400px;
+    padding-right: 40px;
+    margin-left: 60px;
+}
+
+.footerText1{
+    /* margin-top: 30px; */
+    margin-bottom: 0px;
+    font-size: 1em;
+    color: #A09D93;
+
+}
+.footerText{
+    margin-bottom: 0px;
+}
+.footerSubText{
+    margin-bottom: 0px;
+    margin-top: 0px;
+    font-size: 0.9em;
+    color: #FFD950;
+}
+.footerSubText2{
+    margin-top: 0px;
+    font-size: 0.8em;
+    color: #A09D93;
+}
+.footItem3{
+    display: flex;
+    flex-direction: row;
+
+}
+
+.circle{
+
+    background-color:#A09D93 ;
+    width: 50px;
+    height: 50px;
+    border-radius: 30px;
+    margin-left: 40px;
+    margin-top: 30px;
+}
+/* 
+@media only screen and (max-width: 900px){
+    .dinamicPageFooter{
+      
+        background-color: greenyellow;
+    
+    }
+} */

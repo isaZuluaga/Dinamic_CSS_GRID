@@ -1,0 +1,61 @@
+
+@media only screen and (max-width: 1290px){
+
+    .puzzleContainer{
+        grid-row-gap: 5px;
+        grid-column-gap: 5px;
+    }
+    .puzzlePart1{
+        order: 7;
+    }
+    .puzzlePart2{
+        order: -2;
+    }
+    .puzzlePart3{
+
+        order: -4;
+    }
+    .puzzlePart4{
+
+        order: 6;
+    }
+    .puzzlePart5{
+        order: -3;
+    }
+    .productsGallery{
+        grid-template-columns: 1fr;
+        grid-template-rows: 700px 560px 100px ;
+        grid-row-gap: 20px;
+
+    }
+    .productGrid2{
+       justify-content: center;
+        grid-template-columns: 350px 350px ;
+        grid-template-rows: 230px 230px;
+        row-gap: 40px;
+    }
+    .productGrid1{
+        justify-content: center;
+        grid-template-columns: 350px 350px ;
+        grid-template-rows: 90px 300px;
+    }
+    .subProduct1{
+        grid-column: span 2;
+    }
+    .navBarOptions{
+        display: none;
+
+    }
+    .navBarIcons{
+        display: none;
+    }
+
+    .text1{
+        width: 670px;
+    }
+
+
+
+
+
+}

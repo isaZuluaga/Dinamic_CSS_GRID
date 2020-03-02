@@ -1,2 +1,4 @@
 # Dinamic_CSS_GRID
-Dinamic-CSS-GRID practica de css grid DWA
+Dinamic-CSS-GRID práctica de css grid DWA
+>
+Isabel Zuluaga González - 000138379

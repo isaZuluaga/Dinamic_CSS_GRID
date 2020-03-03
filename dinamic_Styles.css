@@ -140,9 +140,15 @@ margin-left: 30px;
     column-gap: 20px;
     row-gap: 20px;
     padding: 40px;
-
+    font-family: dinamicFont2;
 }
 .subProduct1{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-start;
+    padding: 30px;
+    padding-left: 10px;
     grid-row: span 2;
     background-image: url(./Dinamic_imgs/ian-dooley-FoF0w-d6Z74-unsplash.jpg);
     background-size: 100% 100%;

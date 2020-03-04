@@ -2,8 +2,10 @@
 @media only screen and (max-width: 1290px){
 
     .puzzleContainer{
-        grid-row-gap: 5px;
-        grid-column-gap: 5px;
+        grid-row-gap: 0px;
+        grid-column-gap: 0px;
+        grid-template-columns: 1fr 1fr 1.12fr 1fr;
+        grid-template-rows: 1fr 1fr;
     }
     .puzzlePart1{
         order: 7;
